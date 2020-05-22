@@ -9,3 +9,6 @@ remove:
 
 run:
 	docker container run -p ${PORT}:80 --name rw cognito-poc:latest
+
+restart:
+	docker container start -a rw
