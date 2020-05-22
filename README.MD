@@ -1,5 +1,7 @@
 # MOD_AUTH_OPENIDC DEMO
 
+The app contains a CGI script that lists the HTTP headers, located in http://localhost:8080/secure/print.cgi.
+
 ## App info
 
 **App client**  
@@ -10,6 +12,9 @@
 http://localhost:8080  
 **Private**  
 http://locahost:8080/secure  
+**Logout URL**  
+http://localhost:8080/secure/redirect_uri?logout=http%3A%2F%2Flocalhost%3A8080%2Flogout  
+This will make the plugin invalidate the session in the app and the redirect URL will the redirect to Cognito to invalidate the session there (see the redirect rule in the `httpd.conf`).
 
 ### Build
 Build docker image
