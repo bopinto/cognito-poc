@@ -1,0 +1,4 @@
+OIDCProviderMetadataURL https://cognito-idp.[REGION].amazonaws.com/[POOL_ID]/.well-known/openid-configuration
+OIDCClientID [CLIENT_ID]
+OIDCClientSecret [CLIENT_SECRET]
+OIDCCryptoPassphrase [RANDOM_STRING]
